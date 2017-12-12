@@ -23,7 +23,7 @@ title_pix  = 50
 date_pix = 25
 text_width = 16
 text_start_heigth = 10
-
+text_font = "AdobeKaitiStd-Regular.otf"
 """
 main
 """
@@ -145,7 +145,7 @@ class textParser(object):
 
 class imgDrawer(object):
     def __init__(self,draw_block):
-        font_type = "AdobeKaitiStd-Regular.otf"
+        font_type = text_font
         self.draw_block = draw_block
         cur_p = self.draw_block['heigth']
         self.font = ImageFont.truetype(os.path.join("font",font_type), text_pix)
